@@ -1,6 +1,6 @@
 {
 	"name": "n8n-nodes-atlascloud",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "AtlasCloud n8n community nodes (LLM + image/video generation)",
 	"license": "MIT",
 	"homepage": "",
