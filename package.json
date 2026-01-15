@@ -1,0 +1,63 @@
+{
+	"name": "n8n-nodes-atlascloud",
+	"version": "0.1.0",
+	"description": "AtlasCloud n8n community nodes (LLM + image/video generation)",
+	"license": "MIT",
+	"homepage": "",
+	"keywords": [
+		"n8n-community-node-package",
+		"atlas",
+		"atlas-cloud",
+		"ai",
+		"image-generation",
+		"video-generation",
+		"text-to-image",
+		"image-to-image",
+		"text-to-video",
+		"image-to-video",
+		"file-upload",
+		"media-upload"
+	],
+	"author": {
+		"name": "atlascloudai",
+		"email": "milo.ding@atlascloud.ai"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AtlascloudAI/n8n-nodes-atlascloud.git"
+	},
+	"main": "index.js",
+	"scripts": {
+		"build": "n8n-node build",
+		"build:watch": "tsc --watch",
+		"dev": "n8n-node dev",
+		"lint": "n8n-node lint",
+		"lint:fix": "n8n-node lint --fix",
+		"release": "n8n-node release",
+		"prepublishOnly": "n8n-node prerelease"
+	},
+	"files": [
+		"dist"
+	],
+	"n8n": {
+		"n8nNodesApiVersion": 1,
+		"credentials": [
+			"dist/credentials/AtlasCloudApi.credentials.js"
+		],
+		"nodes": [
+			"dist/nodes/AtlasCloudTaskSubmit/AtlasCloudTaskSubmit.node.js",
+			"dist/nodes/AtlasCloudTaskStatus/AtlasCloudTaskStatus.node.js",
+			"dist/nodes/AtlasCloudChat/AtlasCloudChat.node.js"
+		]
+	},
+	"devDependencies": {
+		"@n8n/node-cli": "*",
+		"eslint": "9.32.0",
+		"prettier": "3.6.2",
+		"release-it": "^19.0.4",
+		"typescript": "5.9.2"
+	},
+	"peerDependencies": {
+		"n8n-workflow": "*"
+	}
+}
