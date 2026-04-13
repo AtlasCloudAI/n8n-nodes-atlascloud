@@ -1,5 +1,7 @@
 # N8N Nodes for AtlasCloud
 
+> Power your n8n workflows with Seedance 2.0 and unlock a new standard for AI video creation. Explore the [Seedance 2.0 family](https://www.atlascloud.ai/collections/seedance2?utm_source=github&utm_medium=link&utm_campaign=n8n-nodes-atlascloud) on AtlasCloud.
+
 [AtlasCloud](https://www.atlascloud.ai?utm_source=github&utm_medium=link&utm_campaign=n8n-nodes-atlascloud) is a cloud-based AI platform that provides high-performance model inference services. This n8n community node package allows you to seamlessly integrate AtlasCloud's infrastructure into your workflows, giving you access to popular Large Language Models (LLMs) and advanced Image/Video generation models.
 
 ## Features
